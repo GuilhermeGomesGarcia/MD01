@@ -48,7 +48,7 @@ body {
 .apresentacao{
     display: flex;
     gap: 2.625rem;
-    padding: 6% 6% 6% 10%;
+    padding: 4% 8% 6% 10%;
     justify-content: space-between;
     align-items: center;
 }
@@ -139,24 +139,34 @@ body {
     color: var(--cor-Dourada);
 }
 
-@media(max-width: 768px) {
+@media(max-width: 1023px) {
     .apresentacao{
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
+        padding: 5%;
     }
     .apresentacao__conteudo{
-        width: 100%;
+        width: auto;
         text-align: center;
     }
     .apresentacao__imagem{
-        width: 80%;
+        width: auto;
     }
     .cabecalho__menu{
         gap: 2rem;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
     .cabecalho__menu__link{
         padding: 2% 0% 0% 0%;
+    }
+    .cabecalho{
+        padding: 2% 0% 0% 38%;
+    }
+    .rodape{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 0;
     }
 }
